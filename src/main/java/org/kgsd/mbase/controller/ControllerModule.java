@@ -9,5 +9,6 @@ public class ControllerModule extends AbstractModule {
     protected void configure() {
         Multibinder<Controller> multiBinder = Multibinder.newSetBinder(binder(), Controller.class);
         multiBinder.addBinding().to(MonitorController.class).asEagerSingleton();
+        multiBinder.addBinding().to(UserController.class);
     }
 }

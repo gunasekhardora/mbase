@@ -15,6 +15,20 @@ public class Constants {
     public static final Integer APP_PORT = Integer.parseInt(properties.getProperty("mbase.port",
             "1111"));
 
+    // Mongo
+    public static final String MONGO_URL = properties.getProperty("mongo.url",
+            "mongodb://localhost:27017");
+    public static final String MONGO_USER_DB = "userDB";
+    public static final String MONGO_USER_COLLECTION = "users";
+
+    public static final String MONGO_USERID = "userid";
+    public static final String MONGO_USERNAME = "username";
+    public static final String MONGO_USERCOUNTRY = "usercountry";
+    public static final String MONGO_CREATION_DATE = "userdate";
+
+    // Request Constants
+    public static final String USER_ID = "id";
+
     private static Properties getProperties() {
         String configFile = System.getProperty("config.path");
         Properties properties = new Properties();

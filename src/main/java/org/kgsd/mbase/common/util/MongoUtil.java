@@ -1,15 +1,16 @@
 package org.kgsd.mbase.common.util;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import org.kgsd.mbase.common.Constants;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+
+import static org.kgsd.mbase.common.Constants.MONGO_URL;
 
 public class MongoUtil {
     private static MongoClient mongoClient;
 
     public static MongoClient getClient() {
         if (mongoClient == null) {
-            mongoClient = new MongoClient(new MongoClientURI(Constants.MONGO_URL));
+            mongoClient = MongoClients.create(MONGO_URL);
         }
         return mongoClient;
     }

@@ -15,7 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <pippo.version>1.12.0</pippo.version>
         <guice.version>4.1.0</guice.version>
-        <log4j.version>2.14.0</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
         <lombok.version>1.18.2</lombok.version>
         <mongo.version>3.11.2</mongo.version>
         <jackson.version>2.10.2</jackson.version>
